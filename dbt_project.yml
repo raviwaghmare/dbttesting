@@ -1,5 +1,10 @@
-name: 'dbttesting'
+name: 'jaffle_shop'
 version: '1.0'
 config-version: 2
 profile: 'my_profile'
 model-paths: ['models']
+models:
+  jaffle_shop:
+    +materialized: table
+    example:
+      +materialized: view
